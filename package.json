@@ -52,15 +52,9 @@
   },
   "packageManager": "pnpm@9.15.4",
   "engines": {
-<<<<<<< HEAD
     "node": ">=18.12.0",
     "pnpm": ">=9.15.4"
-=======
-    "node": ">=16.14.0",
-    "pnpm": ">=8.6.2"
   },
   "dependencies": {
     "openapi-types": "7"
->>>>>>> f4226a7 (Updated package.json and pnpm-lock.yaml)
   }
-}

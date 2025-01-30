@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "turbo run generate && turbo run build",
+    "start": "node ./out/botpress.js",
     "bump": "depsynky bump --ignore-dev && pnpm -w install",
     "test": "vitest --run",
     "check:bplint": "turbo check:bplint",
@@ -52,3 +53,4 @@
   },
   "packageManager": "pnpm@8.6.2"
 }
+

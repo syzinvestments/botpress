@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "turbo run generate && turbo run build",
-    "start": "node ./dist/botpress.js",  // Change 'dist' to your actual output directory
+    "start": "node ./out/botpress.js",
     "bump": "depsynky bump --ignore-dev && pnpm -w install",
     "test": "vitest --run",
     "check:bplint": "turbo check:bplint",
@@ -48,8 +48,11 @@
     "ts-node": "^10.9.2",
     "turbo": "^2.3.3",
     "typescript": "^5.6.3",
-    "typescript-eslint": "^8.19.1",
     "vitest": "^2.1.4"
   },
-  "packageManager": "pnpm@8.6.2"
+  "packageManager": "pnpm@8.6.2",
+  "engines": {
+    "node": ">=16.14.0",
+    "pnpm": ">=8.6.2"
+  }
 }

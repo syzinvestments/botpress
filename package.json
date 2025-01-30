@@ -2,7 +2,7 @@
   "name": "botpress",
   "private": true,
   "scripts": {
-    "build": "pnpm install && pnpm build",
+    "build": "turbo run generate && turbo run build",
     "start": "node ./out/botpress.js",
     "bump": "depsynky bump --ignore-dev && pnpm -w install",
     "test": "vitest --run",
@@ -50,11 +50,12 @@
     "typescript": "^5.6.3",
     "vitest": "^2.1.4"
   },
+  "dependencies": {
+    "openapi-types": "7"
+  },
   "packageManager": "pnpm@9.15.4",
   "engines": {
     "node": ">=18.12.0",
     "pnpm": ">=9.15.4"
-  },
-  "dependencies": {
-    "openapi-types": "7"
   }
+}

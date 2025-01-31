@@ -2,9 +2,8 @@
   "name": "botpress",
   "private": true,
   "scripts": {
-    "build": "turbo run generate && turbo run build && echo 'Build completed!'",
-    "start": "node ./dist/botpress.js",
-    "bump": "depsynky bump --ignore-dev && pnpm -w install",
+    "build": "turbo run generate && turbo run build && pnpm --filter New_Botpress_Project build && echo 'Build completed!'",
+    "start": "node ./New_Botpress_Project/dist/botpress.js",
     "test": "vitest --run",
     "check:bplint": "turbo check:bplint",
     "check:dep": "depsynky check --ignore-dev",

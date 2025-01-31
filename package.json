@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "build": "turbo run generate && turbo run build && echo 'Build completed!'",
-    "start": "node ./dist/botpress.js",  // Adjusted the path here based on your build output
+    "start": "node ./dist/botpress.js",
     "bump": "depsynky bump --ignore-dev && pnpm -w install",
     "test": "vitest --run",
     "check:bplint": "turbo check:bplint",

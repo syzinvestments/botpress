@@ -11,6 +11,9 @@ importers:
       openapi-types:
         specifier: '7'
         version: 7.2.3
+      type-fest:
+        specifier: 4.12.0
+        version: 4.12.0
     devDependencies:
       '@aws-sdk/client-dynamodb':
         specifier: ^3.564.0
@@ -1274,7 +1277,7 @@ importers:
         version: link:../../packages/sdk-addons
       '@doist/todoist-api-typescript':
         specifier: ^3.0.3
-        version: 3.0.3(type-fest@3.13.1)
+        version: 3.0.3(type-fest@4.12.0)
       axios:
         specifier: ^1.7.4
         version: 1.7.9
@@ -5060,8 +5063,8 @@ packages:
     resolution: {integrity: sha512-3Ek9H3X6pj5TgenXYtNWdaBon1tgYCaebd+XPg0keyjEbEfkD4KkmAxkQ/i1vYvxdcT5nscLBfq9VJRmCBcFSw==}
     engines: {node: '>= 0.10'}
 
-  cjs-module-lexer@1.4.2:
-    resolution: {integrity: sha512-7gdnIlr/WqvlQaX6yMvhHbiEVZ07qCV22rb/brgyFGKgo76ckIsrtDp4w2NIOitmKDNgiUm+pfVSE4VMwnkXwQ==}
+  cjs-module-lexer@1.4.3:
+    resolution: {integrity: sha512-9z8TZaGM1pfswYeXrUpzPrkx8UnWYdhJclsiYMm6x/w5+nN+8Tf/LnAgfLGQCm59qAOxU8WwHEq2vNwF6i4j+Q==}
 
   clean-stack@2.2.0:
     resolution: {integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==}
@@ -8589,6 +8592,10 @@ packages:
     resolution: {integrity: sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==}
     engines: {node: '>=14.16'}
 
+  type-fest@4.12.0:
+    resolution: {integrity: sha512-5Y2/pp2wtJk8o08G0CMkuFPCO354FGwk/vbidxrdhRGZfd0tFnb4Qb8anp9XxXriwBgVPjdWbKpGl4J9lJY2jQ==}
+    engines: {node: '>=16'}
+
   type-is@1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
     engines: {node: '>= 0.6'}
@@ -9916,14 +9923,14 @@ snapshots:
       enabled: 2.0.0
       kuler: 2.0.0
 
-  '@doist/todoist-api-typescript@3.0.3(type-fest@3.13.1)':
+  '@doist/todoist-api-typescript@3.0.3(type-fest@4.12.0)':
     dependencies:
       axios: 1.7.9
       axios-case-converter: 1.1.1(axios@1.7.9)
       axios-retry: 3.9.1
       runtypes: 6.7.0
       ts-custom-error: 3.3.1
-      type-fest: 3.13.1
+      type-fest: 4.12.0
       uuid: 9.0.1
     transitivePeerDependencies:
       - debug
@@ -12658,7 +12665,7 @@ snapshots:
       inherits: 2.0.4
       safe-buffer: 5.2.1
 
-  cjs-module-lexer@1.4.2: {}
+  cjs-module-lexer@1.4.3: {}
 
   clean-stack@2.2.0: {}
 
@@ -14707,7 +14714,7 @@ snapshots:
       '@jest/types': 29.6.3
       '@types/node': 18.19.74
       chalk: 4.1.2
-      cjs-module-lexer: 1.4.2
+      cjs-module-lexer: 1.4.3
       collect-v8-coverage: 1.0.2
       glob: 7.2.3
       graceful-fs: 4.2.11
@@ -16797,6 +16804,8 @@ snapshots:
   type-fest@0.21.3: {}
 
   type-fest@3.13.1: {}
+
+  type-fest@4.12.0: {}
 
   type-is@1.6.18:
     dependencies:

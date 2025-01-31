@@ -1,5 +1,5 @@
 {
-  "name": "botpress",
+  "name": "MyBankBot",
   "private": true,
   "scripts": {
     "build": "turbo run generate && turbo run build && echo 'Build completed!'",
